@@ -1,0 +1,23 @@
+{
+  "name": "frontend-project-lvl1",
+  "version": "1.0.0",
+  "description": "Brain games on Hexlet",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chubiitsa/frontend-project-lvl1.git"
+  },
+  "author": "Anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chubiitsa/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/chubiitsa/frontend-project-lvl1#readme"
+}
