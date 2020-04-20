@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { welcome, askName } from '../src/index.js';
+import { welcome, sayHello, askName } from '../src/index.js';
 
 welcome();
-askName();
+const name = askName();
+sayHello(name);
