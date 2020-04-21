@@ -4,8 +4,8 @@ export default function calc() {
   };
 
   const operators = ['+', '-', '*'];
-  const firstNumber = Math.floor(Math.random() * 20);
-  const secondNumber = Math.floor(Math.random() * 10);
+  const firstNumber = Math.ceil(Math.random() * 20);
+  const secondNumber = Math.ceil(Math.random() * 10);
   const operator = operators[Math.floor(Math.random() * 3)];
   data.question = `${firstNumber} ${operator} ${secondNumber}`;
 

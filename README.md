@@ -9,3 +9,6 @@
 
 Результат игры **brain-calc** (проигрыш и выигрыш):
 [![asciicast](https://asciinema.org/a/nXZ3KCZWWZdXPu8rC4c3xUSqY.svg)](https://asciinema.org/a/nXZ3KCZWWZdXPu8rC4c3xUSqY)
+
+Результат игры **brain-gcd** (проигрыш и выигрыш):
+[![asciicast](https://asciinema.org/a/Wfan36foYH4cC0dypmsXrDAD0.svg)](https://asciinema.org/a/Wfan36foYH4cC0dypmsXrDAD0)
