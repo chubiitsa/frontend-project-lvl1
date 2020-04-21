@@ -4,9 +4,9 @@ import {
   welcome, sayHello, game, askName,
 } from '../src/index.js';
 
-import even from '../src/games/even.js';
+import calc from '../src/games/calc.js';
 
 welcome();
 const name = askName();
 sayHello(name);
-game(name, even);
+game(name, calc);
