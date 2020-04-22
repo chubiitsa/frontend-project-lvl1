@@ -15,8 +15,8 @@ export function sayHello(name) {
 
 export function game(playersName, gameData) {
   console.log(gameData().description);
-  let points = 0;
   const pointsToPass = 3;
+  let points = 0;
   while (points < pointsToPass) {
     const { question, answer } = gameData();
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `);

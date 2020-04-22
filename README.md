@@ -12,3 +12,6 @@
 
 Результат игры **brain-gcd** (проигрыш и выигрыш):
 [![asciicast](https://asciinema.org/a/Wfan36foYH4cC0dypmsXrDAD0.svg)](https://asciinema.org/a/Wfan36foYH4cC0dypmsXrDAD0)
+
+Демонстрация игры **brain-progression**:
+[![asciicast](https://asciinema.org/a/dx51zWLh7LtItkwPEaTdvML5S.svg)](https://asciinema.org/a/dx51zWLh7LtItkwPEaTdvML5S)
