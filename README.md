@@ -15,3 +15,6 @@
 
 Демонстрация игры **brain-progression**:
 [![asciicast](https://asciinema.org/a/dx51zWLh7LtItkwPEaTdvML5S.svg)](https://asciinema.org/a/dx51zWLh7LtItkwPEaTdvML5S)
+
+Демонстрация игры **brain-prime**:
+[![asciicast](https://asciinema.org/a/mjFJ0kpCzoFNUUvcs4fGBU5gr.svg)](https://asciinema.org/a/mjFJ0kpCzoFNUUvcs4fGBU5gr)

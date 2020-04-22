@@ -21,6 +21,5 @@ export default function calc() {
       break;
     default: break;
   }
-
   return data;
 }
