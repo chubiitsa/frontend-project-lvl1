@@ -12,7 +12,8 @@ export default function prime() {
     description: 'Answer "yes" if given number is prime. Otherwise answer "no".',
   };
 
-  data.question = Math.ceil(Math.random() * 100);
+  const maxNumber = 100;
+  data.question = Math.ceil(Math.random() * maxNumber);
   data.answer = isPrime(data.question);
 
   return data;

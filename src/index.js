@@ -1,16 +1,10 @@
 import readlineSync from 'readline-sync';
 
-
 export function welcome() {
   console.log('Welcome to the Brain Games!');
-}
-
-export function askName() {
-  return readlineSync.question('May I have your name? ');
-}
-
-export function sayHello(name) {
-  console.log(`Hello, ${name}`);
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}`);
+  return userName;
 }
 
 export function game(playersName, gameData) {

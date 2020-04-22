@@ -3,10 +3,12 @@ export default function progression() {
     description: 'What number is missing in the progression?',
   };
 
-  let number = Math.ceil(Math.random() * 100);
-  const step = Math.ceil(Math.random() * 10);
-  const indexOfMissingNumber = Math.floor(Math.random() * 10);
+  const maxNumber = 100;
+  const maxStep = 10;
   const length = 10;
+  let number = Math.ceil(Math.random() * maxNumber);
+  const step = Math.ceil(Math.random() * maxStep);
+  const indexOfMissingNumber = Math.floor(Math.random() * length);
   const array = [];
 
   for (let i = 0; i < length; i += 1) {

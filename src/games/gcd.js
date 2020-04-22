@@ -2,9 +2,9 @@ export default function gcd() {
   const data = {
     description: 'Find the greatest common divisor of given numbers.',
   };
-
-  let firstNumber = Math.ceil(Math.random() * 30);
-  let secondNumber = Math.ceil(Math.random() * 20);
+  const maxNumber = 30;
+  let firstNumber = Math.ceil(Math.random() * maxNumber);
+  let secondNumber = Math.ceil(Math.random() * maxNumber);
 
   data.question = `${firstNumber} ${secondNumber}`;
 

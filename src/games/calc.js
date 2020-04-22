@@ -3,10 +3,12 @@ export default function calc() {
     description: 'What is the result of the expression?',
   };
 
+  const maxFirstNumber = 20;
+  const maxSecondNumber = 10;
   const operators = ['+', '-', '*'];
-  const firstNumber = Math.ceil(Math.random() * 20);
-  const secondNumber = Math.ceil(Math.random() * 10);
-  const operator = operators[Math.floor(Math.random() * 3)];
+  const firstNumber = Math.ceil(Math.random() * maxFirstNumber);
+  const secondNumber = Math.ceil(Math.random() * maxSecondNumber);
+  const operator = operators[Math.floor(Math.random() * operators.length)];
   data.question = `${firstNumber} ${operator} ${secondNumber}`;
 
   switch (operator) {

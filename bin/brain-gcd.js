@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 
 import {
-  welcome, sayHello, game, askName,
+  welcome, game,
 } from '../src/index.js';
 
 import gcd from '../src/games/gcd.js';
 
-welcome();
-const name = askName();
-sayHello(name);
+const name = welcome();
 game(name, gcd);
