@@ -1,14 +1,16 @@
-export default function progression() {
-  const data = {
-    description: 'What number is missing in the progression?',
-  };
+import getRandomNumber from '../util.js';
+
+const description = 'What number is missing in the progression?';
+
+const progression = () => {
+  const data = {};
 
   const maxNumber = 100;
   const maxStep = 10;
   const length = 10;
-  let number = Math.ceil(Math.random() * maxNumber);
-  const step = Math.ceil(Math.random() * maxStep);
-  const indexOfMissingNumber = Math.floor(Math.random() * length);
+  let number = getRandomNumber(maxNumber);
+  const step = getRandomNumber(maxStep);
+  const indexOfMissingNumber = getRandomNumber(length, false);
   const array = [];
 
   for (let i = 0; i < length; i += 1) {
@@ -23,4 +25,6 @@ export default function progression() {
   data.question = array.join(' ');
 
   return data;
-}
+};
+
+export { progression, description };

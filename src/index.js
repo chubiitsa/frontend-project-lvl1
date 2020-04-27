@@ -1,14 +1,14 @@
 import readlineSync from 'readline-sync';
 
-export function welcome() {
+const welcome = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
   return userName;
-}
+};
 
-export function game(playersName, gameData) {
-  console.log(gameData().description);
+const game = (playersName, gameDesc, gameData) => {
+  console.log(gameDesc);
   const pointsToPass = 3;
   let points = 0;
   while (points < pointsToPass) {
@@ -23,4 +23,11 @@ export function game(playersName, gameData) {
     }
   }
   console.log(`Congratulations, ${playersName}!`);
-}
+};
+
+const gameStart = (gameName, gameDesc) => {
+  const userName = welcome();
+  game(userName, gameDesc, gameName);
+};
+
+export { welcome, gameStart };

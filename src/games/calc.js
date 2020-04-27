@@ -1,14 +1,16 @@
-export default function calc() {
-  const data = {
-    description: 'What is the result of the expression?',
-  };
+import getRandomNumber from '../util.js';
+
+const description = 'What is the result of the expression?';
+
+const calc = () => {
+  const data = {};
 
   const maxFirstNumber = 20;
   const maxSecondNumber = 10;
   const operators = ['+', '-', '*'];
-  const firstNumber = Math.ceil(Math.random() * maxFirstNumber);
-  const secondNumber = Math.ceil(Math.random() * maxSecondNumber);
-  const operator = operators[Math.floor(Math.random() * operators.length)];
+  const firstNumber = getRandomNumber(maxFirstNumber);
+  const secondNumber = getRandomNumber(maxSecondNumber);
+  const operator = operators[getRandomNumber(operators.length, false)];
   data.question = `${firstNumber} ${operator} ${secondNumber}`;
 
   switch (operator) {
@@ -24,4 +26,6 @@ export default function calc() {
     default: break;
   }
   return data;
-}
+};
+
+export { calc, description };

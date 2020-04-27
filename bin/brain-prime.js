@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
-import {
-  welcome, game,
-} from '../src/index.js';
+import { gameStart } from '../src/index.js';
+import { prime, description } from '../src/games/prime.js';
 
-import prime from '../src/games/prime.js';
-
-const name = welcome();
-game(name, prime);
+gameStart(prime, description);

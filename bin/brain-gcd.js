@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
-import {
-  welcome, game,
-} from '../src/index.js';
+import { gameStart } from '../src/index.js';
+import { gcd, description } from '../src/games/gcd.js';
 
-import gcd from '../src/games/gcd.js';
-
-const name = welcome();
-game(name, gcd);
+gameStart(gcd, description);

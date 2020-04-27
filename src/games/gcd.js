@@ -1,10 +1,12 @@
-export default function gcd() {
-  const data = {
-    description: 'Find the greatest common divisor of given numbers.',
-  };
+import getRandomNumber from '../util.js';
+
+const description = 'Find the greatest common divisor of given numbers.';
+
+const gcd = () => {
+  const data = {};
   const maxNumber = 30;
-  let firstNumber = Math.ceil(Math.random() * maxNumber);
-  let secondNumber = Math.ceil(Math.random() * maxNumber);
+  let firstNumber = getRandomNumber(maxNumber);
+  let secondNumber = getRandomNumber(maxNumber);
 
   data.question = `${firstNumber} ${secondNumber}`;
 
@@ -13,4 +15,6 @@ export default function gcd() {
     data.answer = firstNumber.toString();
   }
   return data;
-}
+};
+
+export { gcd, description };
