@@ -1,9 +1,3 @@
-const getRandomNumber = (max, up = true) => {
-  const num = Math.random() * max;
-  if (up) {
-    return Math.ceil(num);
-  }
-  return Math.floor(num);
-};
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 export { getRandomNumber as default };

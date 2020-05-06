@@ -1,33 +1,26 @@
 import readlineSync from 'readline-sync';
 
-const welcome = () => {
+const playGame = (gameData, gameDesc) => {
   console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}`);
-  return userName;
-};
-
-const game = (playersName, gameDesc, gameData) => {
+  const playersName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${playersName}`);
   console.log(gameDesc);
   const pointsToPass = 3;
-  let points = 0;
-  while (points < pointsToPass) {
+  let userPoints = 0;
+  while (userPoints < pointsToPass) {
     const { question, answer } = gameData();
-    const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `);
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
       console.log('Correct!');
-      points += 1;
+      userPoints += 1;
     } else {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}". \nLets try again, ${playersName}!`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
+      console.log(`Lets try again, ${playersName}!`);
       return;
     }
   }
   console.log(`Congratulations, ${playersName}!`);
 };
 
-const gameStart = (gameName, gameDesc) => {
-  const userName = welcome();
-  game(userName, gameDesc, gameName);
-};
-
-export { welcome, gameStart };
+export default playGame;

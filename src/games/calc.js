@@ -1,16 +1,17 @@
 import getRandomNumber from '../util.js';
+import playGame from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-const calc = () => {
+const getGameData = () => {
   const data = {};
 
   const maxFirstNumber = 20;
   const maxSecondNumber = 10;
   const operators = ['+', '-', '*'];
-  const firstNumber = getRandomNumber(maxFirstNumber);
-  const secondNumber = getRandomNumber(maxSecondNumber);
-  const operator = operators[getRandomNumber(operators.length, false)];
+  const firstNumber = getRandomNumber(0, maxFirstNumber);
+  const secondNumber = getRandomNumber(0, maxSecondNumber);
+  const operator = operators[getRandomNumber(0, operators.length)];
   data.question = `${firstNumber} ${operator} ${secondNumber}`;
 
   switch (operator) {
@@ -28,4 +29,6 @@ const calc = () => {
   return data;
 };
 
-export { calc, description };
+const startGame = () => playGame(getGameData, description);
+
+export default startGame;
