@@ -11,21 +11,25 @@ const getGameData = () => {
   const operators = ['+', '-', '*'];
   const firstNumber = getRandomNumber(0, maxFirstNumber);
   const secondNumber = getRandomNumber(0, maxSecondNumber);
-  const operator = operators[getRandomNumber(0, operators.length)];
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
   data.question = `${firstNumber} ${operator} ${secondNumber}`;
+
+  let answer;
 
   switch (operator) {
     case '+':
-      data.answer = (firstNumber + secondNumber).toString();
+      answer = (firstNumber + secondNumber);
       break;
     case '-':
-      data.answer = (firstNumber - secondNumber).toString();
+      answer = (firstNumber - secondNumber);
       break;
     case '*':
-      data.answer = (firstNumber * secondNumber).toString();
+      answer = (firstNumber * secondNumber);
       break;
     default: break;
   }
+
+  data.answer = answer.toString();
   return data;
 };
 

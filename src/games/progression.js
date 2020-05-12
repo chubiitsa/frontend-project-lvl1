@@ -10,7 +10,7 @@ const getGameData = () => {
   const length = 10;
   const startNumber = getRandomNumber(0, maxNumber);
   const step = getRandomNumber(1, maxStep);
-  const indexOfMissingNumber = getRandomNumber(0, length);
+  const indexOfMissingNumber = getRandomNumber(0, length - 1);
   const array = [];
 
   for (let i = 0; i < length; i += 1) {
