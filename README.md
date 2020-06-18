@@ -6,17 +6,30 @@
 ## Brain-games: 5 игр для развития ума
 Выполено в рамках проекта на [Hexlet](https://ru.hexlet.io/)
 
-Демонстрация установки и работы игры **brain-even** (проигрыш и выигрыш):
+### Установка:
+1. Убедитесь, что у вас установлен [Node.js](https://nodejs.org/en/) не ниже версии 12 `node -v`;
+1. Склонируйте проект
+1. В папке проекта выполните команду `npm link`;
+
+### Игра:
+Запускайте игры с помощью команд ниже: 
+
+**brain-even** :
+
 [![asciicast](https://asciinema.org/a/0SpqUjafvNWMTFvwVnKmKqiZg.svg)](https://asciinema.org/a/0SpqUjafvNWMTFvwVnKmKqiZg)
 
-Демонстрация игры **brain-calc** (проигрыш и выигрыш):
+**brain-calc** :
+
 [![asciicast](https://asciinema.org/a/nXZ3KCZWWZdXPu8rC4c3xUSqY.svg)](https://asciinema.org/a/nXZ3KCZWWZdXPu8rC4c3xUSqY)
 
-Демонстрация игры **brain-gcd** (проигрыш и выигрыш):
+**brain-gcd**:
+
 [![asciicast](https://asciinema.org/a/Wfan36foYH4cC0dypmsXrDAD0.svg)](https://asciinema.org/a/Wfan36foYH4cC0dypmsXrDAD0)
 
-Демонстрация игры **brain-progression**:
+**brain-progression**:
+
 [![asciicast](https://asciinema.org/a/dx51zWLh7LtItkwPEaTdvML5S.svg)](https://asciinema.org/a/dx51zWLh7LtItkwPEaTdvML5S)
 
-Демонстрация игры **brain-prime**:
+**brain-prime**:
+
 [![asciicast](https://asciinema.org/a/mjFJ0kpCzoFNUUvcs4fGBU5gr.svg)](https://asciinema.org/a/mjFJ0kpCzoFNUUvcs4fGBU5gr)
